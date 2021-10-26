@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(255, 250, 255);
+}
+
+
+li{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    border: solid 3px rgb(71, 119, 224);
+    box-shadow: black;
+}
+
+.bg-users:hover {
+    transition: 3s;
+    background-color: aqua;
+}
+
+.bg-posts:hover {
+    transition: 3s;
+    background-color: rgb(243, 241, 116);
+}
+
+.bg-commet:hover {
+    transition: 3s;
+    background-color: rgb(33, 240, 112);
+}

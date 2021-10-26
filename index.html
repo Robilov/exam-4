@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- =============== Link ================ -->
+        <link rel="shortcut icon" href="https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon_chat_r2.ico" type="image/x-icon">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+
+        <title>Comments</title>
+
+    </head>
+    <body>
+        <!-- =============  ============== -->
+        <div class="container">
+            <div class="row mt-2">
+                <ul class="js-user col-4 "></ul>
+                <ul class="js-post col-4 "></ul>
+                <ul class="js-comment col-4 last-ul"></ul>
+            </div>
+        </div>
+
+
+<!-- ================== Users =============== -->
+
+
+        <template id="user-template">
+            <li class="js-user__item bg-users">
+                <h3 class="js-user__name"></h3>
+                <span>Email:</span>
+                <a class="js-user__email"></a>
+                <span>Tel:</span><a class="js-user__phone mb-2"></a>
+                <button class="js-btn__post btn btn-danger">post -></button>
+            </li>
+        </template>
+
+        <!-- ========== Posts ========== -->
+
+        <template id="post-template">
+            <li class="js-post__item bg-posts ">
+                <h4 class="js-post__title text-capitalize"></h4>
+                <p class="js-post__body"></p>
+                <button class="js-btn__comment btn btn-info mb-2">comment -></button>
+                <div><button class="btn btn-success center">👍</button>
+                    <button class="btn btn-danger">👎</button></div>
+
+            </li>
+        </template>
+
+        <!-- =========  Comments ========== -->
+
+        <template id="comment-template">
+            <li class="js-comment__item cart bg-commet">
+                <h5 class="js-comment__title text-capitalize"></h5>
+                <a class="js-comment__email"></a>
+                <p class="js-comment__body"></p>
+               <div class="center"><button class="btn btn-info fs-4">🤍</button></div>
+            </li>
+        </template>
+        
+        <!--================ Javascript ==================-->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="./js/user.js"></script>
+        <script src="./js/post.js"></script>
+        <script src="./js/comments.js"></script>
+    </body>
+</html>
